@@ -1,0 +1,9 @@
+{
+  "extends": "tslint-config-airbnb",
+  "rules": {
+    "ter-arrow-parens": [true, "as-needed"],
+    "variable-name": [true, "allow-pascal-case"],
+    "trailing-comma": false,
+    "semicolon": [true, "always", "ignore-bound-class-methods"]
+  }
+}
