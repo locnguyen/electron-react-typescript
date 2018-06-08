@@ -1,6 +1,6 @@
 # electron-react-typescript
 
-I extracted this from my commercial projects so I can reuse it for new ones. I don't use [create-react-app](https://github.com/facebook/create-react-app) because I inevitably need to eject to support a snowflake case.
+I extracted this from my commercial projects so I can reuse it for new ones. I don't use [create-react-app](https://github.com/facebook/create-react-app) because I inevitably need to eject and support a snowflake case. This project uses Webpack 4 which has great defaults and I've configured hot reloading for you.
 
 It's barebones and has few opinions:
 
