@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   devtool: 'inline-source-map',
   target: 'electron-main',
   entry: {
@@ -19,5 +19,14 @@ module.exports = {
         loader: 'ts-loader'
       }
     ]
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+    })
+  ],
+  node: {
+    __dirname: false,
+    __filename: false
   }
 };
